@@ -40,7 +40,7 @@ const projects = [
 export default function Project() {
   return (
     <section className="bg-black" id="work">
-      <div className="py-6 px-16 mx-auto ">
+      <div className="py-6 px-6 md:px-16 mx-auto ">
         <h1 className="text-4xl font-bold md:text-5xl">FEATURED PROJECT</h1>
         <p className="mt-4">
           Here are some of the selected projects that showcase my passion for
@@ -74,9 +74,9 @@ export default function Project() {
               <div className="flex gap-4 mt-12">
                 <a
                   href={project.live}
-                  className="border-b-2 flex border-[#D3E97A] text-[#D3E97A] "
+                  className="border-b-2 flex border-[#D3E97A] text-[#D3E97A]  "
                 >
-                  LIVE DEMO <img src={arrow} alt="" className="w-5" />
+                  LIVE DEMO <img src={arrow} alt="" className="md:w-5" />
                 </a>
                 <a
                   href={project.github}

@@ -34,7 +34,7 @@ export default function About() {
     <div className="">
       {" "}
       {/* hero section */}
-      <section className=" mx-auto px-16 py-8 h-screen">
+      <section className=" mx-auto px-6 md:px-16 py-8 h-screen">
         <div className="md:flex ">
           <h1 className="md:w-1/2 text-3xl md:text-5xl font-bold  hidden md:block">
             ABOUT ME
@@ -85,7 +85,7 @@ export default function About() {
       </section>
       <hr className="border-t border-gray-600 my-4" />
       {/* capability section */}
-      <section className="mt-16 mx-auto px-16 py-8">
+      <section className="mt-16 mx-auto px-6 md:px-16 py-8">
         <img src={image} alt="" className="object-cover w-full h-[440px]" />
         <div className="md:flex mt-12 ">
           <h1 className="md:w-1/2 text-3xl md:text-5xl font-bold  mb-6">
@@ -106,7 +106,7 @@ export default function About() {
       </section>
       <hr className="border-t border-gray-600 my-4" />
       {/* Experience */}
-      <section className="px-16 py-8 mx-auto mt-16">
+      <section className="px-6 md:px-16 py-8 mx-auto mt-16">
         {" "}
         <div className="md:flex mt-16 ">
           <h1 className="md:w-1/2 text-3xl mb-6 md:text-5xl font-bold  ">

@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default function About() {
   return (
     <section className="bg-black h-screen mt-16">
-      <div className="md:flex mx-auto px-16 py-8">
+      <div className="md:flex mx-auto px-6 md:px-16 py-8">
         <h1 className="md:w-1/2 text-3xl md:text-5xl font-bold  hidden md:block">
           ABOUT ME
         </h1>

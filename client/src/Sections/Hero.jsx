@@ -7,7 +7,7 @@ import github from "../assets/github.png";
 export default function Hero() {
   return (
     <section className="bg-black">
-      <div className="md:flex py-6 px-15 mx auto items-center justify-between">
+      <div className="md:flex py-6 px-6 md:px-16 mx auto items-center justify-between space-y-6">
         <div className="md:w-1/2 ">
           <h1 className="text-4xl md:text-6xl">
             HI, I AM <br />
@@ -38,7 +38,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="sm:mt-4">
+        <div className="sm:mt-12">
           <img
             src={Image}
             alt=""

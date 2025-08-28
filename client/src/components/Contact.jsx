@@ -30,7 +30,7 @@ export default function Contact() {
   };
   return (
     <section className="h-screen mt-12 " id="contact">
-      <div className="md:flex py-8 px-16 mx-auto">
+      <div className="md:flex py-8  px-6 md:px-16 mx-auto">
         <div className="w-full md:w-1/2">
           <h1 className="font-bold text-3xl md:text-5xl mb-4">LET'S CONNECT</h1>
           <p className="mb-2">
