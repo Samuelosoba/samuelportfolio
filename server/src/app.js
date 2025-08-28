@@ -5,16 +5,23 @@ import cors from "cors";
 import morgan from "morgan";
 const app = express();
 const allowedOrigins = [
-  "http://localhost:5173", // for local dev
-  "https://samuelportfolio-nu.vercel.app/", // your deployed frontend
+  "http://localhost:5173",
+  "https://samuelportfolio-nu.vercel.app",
 ];
 
 app.use(
   cors({
-    origin: allowedOrigins,
-    credentials: true, // if you're sending cookies or tokens
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
   })
 );
+
 app.use(morgan("dev"));
 app.use(json({ limit: "25mb" }));
 app.use(express.urlencoded({ extended: true, limit: "25mb" }));
